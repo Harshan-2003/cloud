@@ -1,6 +1,9 @@
 application: app
 version: 1
 runtime: python
+threadsafe: false
 handlers: 
-- url: /.*
-  script: index.py
+- url: /
+  #script: index.py
+  upload: index.html
+  static_files: index.html
